@@ -18,6 +18,7 @@ const MRP = () => {
         return setRandomPhoto(Math.floor(Math.random() * 856))
     }
     // cok sacma olmadi ama duzeltilmesi lazim ama bunun icin cok sarhosum su an
+    // butona her tikladigin yeni pic gelecek falan iste
     return(
         <>
             <h1>Photos from Mars Rover!</h1>
