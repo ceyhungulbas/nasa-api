@@ -4,14 +4,20 @@ const MRP = () => {
     const [roverPictures, setRoverPictures] = useState([])
     const [randomPhoto, setRandomPhoto] = useState(0)
 
+    // useEffect(() => {
+    //     fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=FSEEknZd7Il94MUFY0U6ProdddlQzEHGLDeqOoLa")
+    //         .then(res => res.json())
+    //         .then((data) => {
+    //             console.log("data: ", data);
+    //             console.log(data.photos.length);
+    //             setRoverPictures(data)
+    //         })
+    // }, [])
+
     useEffect(() => {
-        fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=FSEEknZd7Il94MUFY0U6ProdddlQzEHGLDeqOoLa")
-            .then(res => res.json())
-            .then((data) => {
-                console.log("data: ", data);
-                console.log(data.photos.length);
-                setRoverPictures(data)
-            })
+        async function fetchRoverPhotos(){
+            
+        }
     }, [])
 
     const randomPhotoFunc = () => {
