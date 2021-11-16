@@ -17,12 +17,12 @@ const MRP = () => {
     }
     return(
         <>
-            <div>
+            <div className="MRPHeader">
                 <h1>Photos from Mars Rover!</h1>
                 <button onClick={randomPhotoFunc}>Generate!</button>
             </div>
             <br />
-            <div>
+            <div className="MRPImageDiv">
                 <img src={roverPictures?.photos[randomPhoto].img_src} alt={roverPictures?.photos[randomPhoto].id} />    
             </div>
             
