@@ -1,5 +1,4 @@
 import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import Apod from "./components/APOD/Apod"
 import MRP from "./components/MarsRoverPhotos/MRP";
 import { Routes, Route, Link } from "react-router-dom";
