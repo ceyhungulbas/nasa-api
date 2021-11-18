@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./Mrp.css"
 
 const MRP = () => {
     const [roverPictures, setRoverPictures] = useState()

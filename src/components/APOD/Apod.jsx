@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./Apod.css"
 
 const Apod = () => {
     const [pictures, setPictures] = useState([])

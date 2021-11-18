@@ -1,5 +1,9 @@
+import React from "react";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import Apod from "./components/APOD/Apod"
 import MRP from "./components/MarsRoverPhotos/MRP";
+import { Routes, Route, Link } from "react-router-dom";
+import Homepage from "./components/Homepage/Homepage";
 
 function App() {
 
@@ -16,8 +20,11 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Apod /> */}
-      <MRP />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/apod" element={<Apod />} />
+        <Route path="/mrp" element={<MRP />} />
+      </Routes>
     </div>
   );
 }
