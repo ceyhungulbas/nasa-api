@@ -1,8 +1,9 @@
 import React from "react";
 import Apod from "./components/APOD/Apod"
 import MRP from "./components/MarsRoverPhotos/MRP";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Homepage from "./components/Homepage/Homepage";
+import NavbarAsComponent from "./components/Homepage/NavbarAsComponent"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Homepage />} />
+        {/* <Route path="/" element={<NavbarAsComponent />} /> */}
         <Route path="/apod" element={<Apod />} />
         <Route path="/mrp" element={<MRP />} />
       </Routes>
