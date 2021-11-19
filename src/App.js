@@ -1,7 +1,7 @@
 import React from "react";
 import Apod from "./components/APOD/Apod"
 import MRP from "./components/MarsRoverPhotos/MRP";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom"
 import Homepage from "./components/Homepage/Homepage";
 import NavbarAsComponent from "./components/Homepage/NavbarAsComponent"
 
@@ -20,12 +20,12 @@ function App() {
 
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        {/* <Route path="/" element={<NavbarAsComponent />} /> */}
-        <Route path="/apod" element={<Apod />} />
-        <Route path="/mrp" element={<MRP />} />
-      </Routes>
+      <Router>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/" component={NavbarAsComponent} />
+        <Route path="/APOD" component={Apod} />
+        <Route path="/MRP" component={MRP} />
+      </Router>
     </div>
   );
 }
