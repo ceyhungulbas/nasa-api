@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./Apod.css"
+import "./apod.css"
 
 const Apod = () => {
     const [pictures, setPictures] = useState([])
@@ -22,6 +22,8 @@ const Apod = () => {
                 <img src={pictures.hdurl} alt={pictures.copyright} />
                 <p>{pictures.explanation} <br /><sub>Copyright: {pictures.copyright}</sub></p>
             </div>
+            <p>cok yoruldum kanka hadi calis</p>
+            <span>valla calisti</span>
         </>
     )
 }
